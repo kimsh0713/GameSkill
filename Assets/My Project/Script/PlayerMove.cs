@@ -44,7 +44,7 @@ public class PlayerMove : MonoBehaviour
 
     private void MovingWater()
     {
-        Water.transform.position = new Vector3(Water.transform.position.x, Water.transform.position.y, transform.position.z);
+        Water.transform.position = new Vector3(transform.position.x, Water.transform.position.y, transform.position.z);
     }
 
     private IEnumerator ERotation()
