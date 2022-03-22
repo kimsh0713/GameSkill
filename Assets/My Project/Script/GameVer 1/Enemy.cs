@@ -6,7 +6,7 @@ public class Enemy : MonoBehaviour
 {
     private void OnTriggerEnter(Collider col)
     {
-        if (col.tag == "Border")
+        if (col.CompareTag("Border"))
             Destroy(gameObject);
     }
 }

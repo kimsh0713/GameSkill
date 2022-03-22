@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
     public float MoveSpeed;
+    public float NomalSpeed;
 
     public GameObject Body;
     public GameObject Water;
@@ -14,7 +15,7 @@ public class PlayerMove : MonoBehaviour
         StartCoroutine(ERotation());
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         PlayerMovement();
         MovingWater();
@@ -38,7 +39,7 @@ public class PlayerMove : MonoBehaviour
 
         v = Mathf.Clamp(v, -0.07f, 1);
 
-        Vector3 movedir = new Vector3(h, 0, v) + new Vector3(0, 0, 50 * Time.deltaTime);
+        Vector3 movedir = new Vector3(h, 0, v) + new Vector3(0, 0, NomalSpeed * Time.deltaTime);
         transform.Translate(movedir);
     }
 
