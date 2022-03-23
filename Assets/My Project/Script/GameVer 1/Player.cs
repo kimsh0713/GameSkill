@@ -18,6 +18,8 @@ public class Player : MonoBehaviour
     private float FireTime;
     public GameObject MissileObj;
 
+    public GameObject OBJ;
+
 
     #region UnityMetsod
     private void Awake()
@@ -85,31 +87,16 @@ public class Player : MonoBehaviour
         {
             if (FireTime >= FireDelay)
             {
-                S.Shot(transform.position, Vector3.forward, FireSpeed, Damage);
+                S.Shot(transform.position, Vector3.forward, FireSpeed, Damage, true);
                 FireTime = 0;
             }
         }
+
+        if (Input.GetKey(KeyCode.K))
+        {
+            S.Shot(transform.position, Vector3.forward, FireSpeed, Damage, false);
+        }
         FireTime += Time.deltaTime;
-    }
-
-    private float Bezier(float a, float b, float c)
-    {
-        float ab = Mathf.Lerp(a, b, Time.deltaTime);
-        float bc = Mathf.Lerp(b, c, Time.deltaTime);
-
-        return Mathf.Lerp(ab, bc, Time.deltaTime);
-    }
-
-    private IEnumerator FireMissile()
-    {
-        GameObject missile = Instantiate(MissileObj);
-        
-        yield return null;
-    }
-
-    private void Homing()
-    {
-
     }
 
     #endregion
