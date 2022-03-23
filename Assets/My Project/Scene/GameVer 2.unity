@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.25123876, g: 0.13392252, b: 0.16939017, a: 1}
+  m_IndirectSpecularColor: {r: 0.25123945, g: 0.13392287, b: 0.16939068, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -548,8 +548,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 798549733}
-  m_LocalRotation: {x: 0.12801172, y: 0.5597526, z: 0.0880456, w: -0.81396437}
-  m_LocalPosition: {x: 0.18288931, y: -6.4150915, z: -0.13100155}
+  m_LocalRotation: {x: 0.3910934, y: 0.04415474, z: 0.018789696, w: -0.91909915}
+  m_LocalPosition: {x: 7.6211796, y: -1454.5614, z: -33.255688}
   m_LocalScale: {x: 0.03333333, y: 0.36766884, z: 0.035360474}
   m_Children: []
   m_Father: {fileID: 584862135}
@@ -20458,7 +20458,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5946998103135470694}
   - component: {fileID: 5946998103132060536}
-  - component: {fileID: 5946998103134984263}
   - component: {fileID: 5946998103144475608}
   m_Layer: 8
   m_Name: Player
@@ -20467,18 +20466,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &5946998103134984263
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5946998103134984262}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 122f3558cb3b81040a077374296bc44d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5946998103134984264
 GameObject:
   m_ObjectHideFlags: 0
