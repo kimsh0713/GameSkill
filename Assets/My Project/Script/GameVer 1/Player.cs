@@ -90,7 +90,8 @@ public class Player : MonoBehaviour
 
         if (Input.GetKey(KeyCode.K))
         {
-            S.Shot(transform.position, Vector3.forward, FireSpeed, Damage, false);
+            for(int i = 0; i < 50; i++)
+                S.Shot(transform.position, Vector3.forward, FireSpeed, Damage, false);
         }
         FireTime += Time.deltaTime;
     }

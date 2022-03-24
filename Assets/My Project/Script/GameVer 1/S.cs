@@ -27,24 +27,11 @@ public static class S
         {
             var pool = PoolGet<Bezier>(POOL_TYPE.PBULET, player.transform.position);
             var colliders = Physics.OverlapSphere(player.transform.position, 100, 1 << 8);
-            GameObject target = null;
-            foreach (Collider targetCol in colliders)
-            {
-                float distance = Vector3.Distance(player.transform.position, targetCol.transform.position);
 
-                if (target < Vector3.Distance(player.transform.position, colliders.position))
-                {
-
-                }
-            }
-
-            pool.obj.Init(player.transform, target.transform, 2, 20);
+            pool.obj.Init(player.transform, colliders[0].transform, 1.5f, 30);
             pool.obj.GetComponent<TrailRenderer>().Clear();
 
-            if (targe != null)
-                return (pool.pool, pool.obj.gameObject);
-            else
-                return (null, null);
+            return (pool.pool, pool.obj.gameObject);
         }
     }
 }

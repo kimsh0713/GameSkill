@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bezier : MonoBehaviour
+public class Bezier : PlayerBullet
 {
     private float timerMax = 0;
     private float timerCur = 0;
     private float Speed;
     private bool isBezier = false;
+
+    private Transform EndPos;
 
     Vector3[] points = new Vector3[3];
 
@@ -15,6 +17,7 @@ public class Bezier : MonoBehaviour
     {
         isBezier = true;
         Speed = speed;
+        timerCur = 0;
 
         timerMax = Random.Range(0.7f, 1);
 
@@ -25,7 +28,7 @@ public class Bezier : MonoBehaviour
             (pointDistance * Random.Range(-0.1f, 0.5f) * startTrans.up) +
             (pointDistance * Random.Range(-0.3f, -1.3f) * startTrans.forward);
 
-        points[2] = endTrans.position;
+        EndPos = endTrans;
 
         transform.position = startTrans.position;
     }
@@ -36,6 +39,8 @@ public class Bezier : MonoBehaviour
         {
             if (timerCur > timerMax)
                 return;
+
+            points[2] = EndPos.position;
 
             timerCur += Time.deltaTime * Speed;
 
