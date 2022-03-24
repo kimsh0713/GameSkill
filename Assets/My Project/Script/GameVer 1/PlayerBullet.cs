@@ -2,21 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PlayerBullet : MonoBehaviour
 {
     public float BulletSpeed;
     public Vector3 Dir;
     public int Damage;
-
-    private void OnEnable()
-    {
-        
-    }
-
-    private void OnDisable()
-    {
-
-    }
 
     private void FixedUpdate()
     {

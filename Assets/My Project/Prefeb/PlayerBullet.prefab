@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4005513443850172677}
   - component: {fileID: 4005513443850172682}
-  - component: {fileID: 6496442824057316254}
+  - component: {fileID: -9017231933668699011}
   - component: {fileID: 5918790357706626352}
   - component: {fileID: 2011069877602535977}
   m_Layer: 7
@@ -49,7 +49,7 @@ MonoBehaviour:
   BulletSpeed: 160
   Dir: {x: 0, y: 0, z: 0}
   Damage: 0
---- !u!114 &6496442824057316254
+--- !u!114 &-9017231933668699011
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

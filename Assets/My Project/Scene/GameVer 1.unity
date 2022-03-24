@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.24922624, g: 0.13281158, b: 0.1679501, a: 1}
+  m_IndirectSpecularColor: {r: 0.24922559, g: 0.13281134, b: 0.16794991, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5197,7 +5197,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &694920788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5674,7 +5674,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6601329776660377212, guid: d27487d4f76d6b04cb843ee670e7df9e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -36.9
       objectReference: {fileID: 0}
     - target: {fileID: 6601329776660377212, guid: d27487d4f76d6b04cb843ee670e7df9e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5682,7 +5682,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6601329776660377212, guid: d27487d4f76d6b04cb843ee670e7df9e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 54.1
+      value: 117
       objectReference: {fileID: 0}
     - target: {fileID: 6601329776660377212, guid: d27487d4f76d6b04cb843ee670e7df9e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -25704,8 +25704,6 @@ MonoBehaviour:
   Damage: 1
   FireSpeed: 300
   FireDelay: 0.1
-  MissileObj: {fileID: 4005513443850172676, guid: 8028f2806ce256c45b7ec10858830875, type: 3}
-  OBJ: {fileID: 1073910415}
 --- !u!1 &1095644852
 GameObject:
   m_ObjectHideFlags: 0

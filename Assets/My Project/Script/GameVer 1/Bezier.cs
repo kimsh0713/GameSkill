@@ -7,11 +7,13 @@ public class Bezier : MonoBehaviour
     private float timerMax = 0;
     private float timerCur = 0;
     private float Speed;
+    private bool isBezier = false;
 
     Vector3[] points = new Vector3[3];
 
     public void Init(Transform startTrans, Transform endTrans, float speed, float pointDistance)
     {
+        isBezier = true;
         Speed = speed;
 
         timerMax = Random.Range(0.7f, 1);
@@ -30,15 +32,18 @@ public class Bezier : MonoBehaviour
 
     private void Update()
     {
-        if (timerCur > timerMax)
-            return;
+        if(isBezier)
+        {
+            if (timerCur > timerMax)
+                return;
 
-        timerCur += Time.deltaTime * Speed;
+            timerCur += Time.deltaTime * Speed;
 
-        transform.position = new Vector3(
-            BezierCurve(points[0].x, points[1].x, points[2].x),
-            BezierCurve(points[0].y, points[1].y, points[2].y),
-            BezierCurve(points[0].z, points[1].z, points[2].z));
+            transform.position = new Vector3(
+                BezierCurve(points[0].x, points[1].x, points[2].x),
+                BezierCurve(points[0].y, points[1].y, points[2].y),
+                BezierCurve(points[0].z, points[1].z, points[2].z));
+        }
     }
 
     private float BezierCurve(float a, float b, float c)

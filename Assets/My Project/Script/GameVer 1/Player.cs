@@ -16,10 +16,6 @@ public class Player : MonoBehaviour
     public float FireSpeed;
     public float FireDelay;
     private float FireTime;
-    public GameObject MissileObj;
-
-    public GameObject OBJ;
-
 
     #region UnityMetsod
     private void Awake()
