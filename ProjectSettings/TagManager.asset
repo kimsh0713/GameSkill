@@ -7,19 +7,25 @@ TagManager:
   - Border
   - PlayerBullet
   - Enemy
+  - Fire
+  - CinemachineTarget
+  - EnemyBullet
+  - Item
+  - PlayerGet
+  - Boss
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - IngameUI
   - Water
   - UI
   - Player
   - PlayerBullet
   - Enemy
-  - 
-  - 
-  - 
+  - EnemyBullet
+  - Item
+  - Player_Get_Item
   - 
   - 
   - 
