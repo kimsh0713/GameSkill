@@ -69,6 +69,27 @@ public class GameManager : MonoBehaviour
             var enemy = ObjectPool.SpawnPoolObj<Enemy>("Virus", new Vector3(ran, 0, 20));
             enemy.HP = 240;
         }
+
+        if (Input.GetKeyDown(KeyCode.Alpha8))
+            Saver.ins.Write("Status", Saver.ins.save);
+        if (Input.GetKeyDown(KeyCode.Alpha9))
+            Saver.ins.Write("Status", Saver.ins.save, true);
+        if (Input.GetKeyDown(KeyCode.Alpha0))
+            Saver.ins.get = Saver.ins.Read<Save_Data>("Status");
     }
     #endregion
 }
+
+
+        //if (Input.GetKeyDown(KeyCode.Alpha8))
+        //{
+        //    Saver.ins.Write("Temp", Saver.ins.save);
+        //}
+        //if (Input.GetKeyDown(KeyCode.Alpha9))
+        //{
+        //    Saver.ins.Write("Temp", Saver.ins.save, true);
+        //}
+        //if (Input.GetKeyDown(KeyCode.Alpha0))
+        //{
+        //    Saver.ins.get = Saver.ins.Read<Save_Data>("Temp");
+        //}

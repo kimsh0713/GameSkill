@@ -27,15 +27,15 @@ public static class S
 
     public static IEnumerator ShakeCamera(float ShakeTime, float ShakePower)
     {
-        var startPosition = Camera.main.transform.position;
+        var startPos = Camera.main.transform.position;
 
-        while (ShakeTime > 0.0f)
+        while(ShakeTime > 0.0f)
         {
-            Camera.main.transform.position = startPosition + Random.insideUnitSphere * ShakePower;
+            Camera.main.transform.position = startPos + Random.insideUnitSphere * ShakePower;
             ShakeTime -= Time.deltaTime;
             yield return null;
         }
 
-        Camera.main.transform.position = startPosition;
+        Camera.main.transform.position = startPos;
     }
 }
