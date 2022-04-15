@@ -4,28 +4,25 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Border
-  - PlayerBullet
+  - P_Bullet
   - Enemy
-  - Fire
-  - CinemachineTarget
-  - EnemyBullet
-  - Item
-  - PlayerGet
-  - Boss
+  - GetItem
+  - E_Bullet
+  - GravityBullet
+  - Blood
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - IngameUI
+  - 
   - Water
   - UI
   - Player
-  - PlayerBullet
+  - Bullet
   - Enemy
-  - EnemyBullet
-  - Item
-  - Player_Get_Item
+  - Items
+  - GetItem
+  - Blood
   - 
   - 
   - 
